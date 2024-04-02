@@ -10,9 +10,12 @@ import ititMessages from './messages/it_IT.json';
 import ptptMessages from './messages/pt_PT.json';
 import ruMessages from './messages/ru.json';
 import ukMessages from './messages/uk.json';
+import faIRMessages from './messages/fa_IR.json';
 
 const messages = {
   ar: arMessages,
+  fa: faIRMessages,
+  'fa-ir': faIRMessages,
   'es-419': es419Messages,
   fr: frMessages,
   'zh-cn': zhcnMessages,
