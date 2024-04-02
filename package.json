@@ -23,10 +23,13 @@
   "publishConfig": {
     "access": "public"
   },
+  "browserslist": [
+    "extends @edx/browserslist-config"
+  ],
   "dependencies": {
-    "@edx/brand": "npm:@edx/brand-edx.org@^2.0.3",
-    "@edx/frontend-component-footer": "^11.1.1",
-    "@edx/frontend-component-header": "^3.1.1",
+    "@edx/brand": "https://github.com/Edspirit/brand-openedx",
+    "@edx/frontend-component-footer": "https://github.com/Edspirit/frontend-component-footer#v12.3.1",
+    "@edx/frontend-component-header": "https://github.com/Edspirit/frontend-component-header#v4.4.1",
     "@edx/frontend-platform": "^2.5.1",
     "@edx/paragon": "^19.9.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -73,7 +76,8 @@
     "whatwg-fetch": "^3.6.2"
   },
   "devDependencies": {
-    "@edx/frontend-build": "12.4",
+    "@edx/browserslist-config": "1.1.1",
+    "@edx/frontend-build": "12.8.6",
     "@edx/reactifex": "^2.1.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.0",

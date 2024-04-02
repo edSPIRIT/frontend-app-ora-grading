@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import Footer from '@edx/frontend-component-footer';
-import { LearningHeader as Header } from '@edx/frontend-component-header';
+import Header from '@edx/frontend-component-header';
 
 import { selectors } from 'data/redux';
 
@@ -13,17 +13,15 @@ import CTA from 'containers/CTA';
 import ListView from 'containers/ListView';
 
 import './App.scss';
+import './index.scss';
+
 import Head from './components/Head';
 
-export const App = ({ courseMetadata, isEnabled }) => (
+export const App = ({ isEnabled }) => (
   <Router>
     <div>
       <Head />
-      <Header
-        courseTitle={courseMetadata.title}
-        courseNumber={courseMetadata.number}
-        courseOrg={courseMetadata.org}
-      />
+      <Header />
       {!isEnabled && <DemoWarning />}
       <CTA />
       <main>
