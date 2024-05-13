@@ -24,9 +24,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@edx/brand": "npm:@edx/brand-openedx@^1.2.0",
-    "@edx/frontend-component-footer": "12.2.1",
-    "@edx/frontend-component-header": "4.6.0",
+    "@edx/brand": "https://github.com/Edspirit/brand-openedx",
+    "@edx/frontend-component-footer": "https://github.com/Edspirit/frontend-component-footer#v12.3.0",
+    "@edx/frontend-component-header": "https://github.com/Edspirit/frontend-component-header#v4.4.0",
     "@edx/frontend-platform": "4.6.1",
     "@edx/paragon": "^20.44.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
