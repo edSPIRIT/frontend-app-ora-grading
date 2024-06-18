@@ -24,7 +24,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@edx/brand": "https://github.com/Edspirit/brand-openedx",
+    "@edx/brand": "https://github.com/Edspirit/brand-openedx#indigo-1.4.2",
     "@edx/frontend-component-footer": "https://github.com/Edspirit/frontend-component-footer#v12.4.1",
     "@edx/frontend-component-header": "https://github.com/Edspirit/frontend-component-header#v4.5.0",
     "@edx/frontend-platform": "4.6.1",
