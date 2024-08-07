@@ -3,7 +3,7 @@ npm-install-%: ## install specified % npm package
 	git add package.json
 
 transifex_resource = frontend-app-ora-grading
-transifex_langs = "ar,de_DE,es_419,fa_IR,fr,fr_CA,hi,it_IT,pt_PT,uk,ru,zh_CN"
+transifex_langs = "ar,de_DE,es_419,fa_IR,fa,fr,fr_CA,hi,it_IT,pt_PT,uk,ru,zh_CN"
 
 intl_imports = ./node_modules/.bin/intl-imports.js
 transifex_utils = ./node_modules/.bin/transifex-utils.js
