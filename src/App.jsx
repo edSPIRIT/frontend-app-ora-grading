@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import FooterSlot from '@openedx/frontend-slot-footer';
-import { LearningHeader as Header } from '@edx/frontend-component-header';
+import FooterSlot from '@edx/frontend-component-footer';
+import Header from '@edx/frontend-component-header';
 
 import { selectors } from 'data/redux';
 
@@ -14,18 +14,11 @@ import NotificationsBanner from 'containers/NotificationsBanner';
 import ListView from 'containers/ListView';
 
 import './App.scss';
-import Head from './components/Head';
 
-export const App = ({ courseMetadata, isEnabled }) => (
+export const App = ({ isEnabled }) => (
   <Router>
     <div>
-      <Head />
-      <Header
-        courseTitle={courseMetadata.title}
-        courseNumber={courseMetadata.number}
-        courseOrg={courseMetadata.org}
-        data-testid="header"
-      />
+      <Header mfeTitle="ora-grading.page.title" />
       {!isEnabled && <DemoWarning />}
       <CTA />
       <NotificationsBanner />
