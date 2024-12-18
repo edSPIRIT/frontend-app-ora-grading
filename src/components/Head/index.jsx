@@ -1,18 +1,20 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useIntl } from '@edx/frontend-platform/i18n';
-import { getConfig } from '@edx/frontend-platform';
+import useGetConfig from '../../useGetConfig';
 
 import messages from './messages';
 
 const Head = () => {
   const { formatMessage } = useIntl();
+  const { platformName, favicon } = useGetConfig();
+
   return (
     <Helmet>
       <title>
-        {formatMessage(messages.PageTitle, { siteName: getConfig().SITE_NAME })}
+        {formatMessage(messages.PageTitle, { siteName: platformName })}
       </title>
-      <link rel="shortcut icon" href={getConfig().FAVICON_URL} type="image/x-icon" />
+      <link rel="shortcut icon" href={favicon} type="image/x-icon" />
     </Helmet>
   );
 };

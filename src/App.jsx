@@ -14,10 +14,12 @@ import NotificationsBanner from 'containers/NotificationsBanner';
 import ListView from 'containers/ListView';
 
 import './App.scss';
+import Head from './components/Head';
 
 export const App = ({ isEnabled }) => (
   <Router>
     <div>
+      <Head />
       <Header mfeTitle="ora-grading.page.title" />
       {!isEnabled && <DemoWarning />}
       <CTA />
